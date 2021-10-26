@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bgImg{
+    background: url(../standard-picture.png);
+    height: 400px;
+    background-size: 100% 100%;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+hr{
+    width: 5%;
+    margin: 20px auto;
+}
+.bgImg div{
+    /* padding-top: 12%; */
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    width: 100%;
+}
+.bgImg .overlay{
+    position: absolute;
+    background-color: rgb(8 8 8 / 36%);;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.bgImg button {
+    background: transparent;
+    color: white;
+    padding: 1% 2%;
+    margin-top: 2%;
+    border: 2px solid;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+/* body{
+    width: 80%;
+    margin:auto ;
+} */
+.bgColor{
+    /* background-color: lightgray; */
+    /* height: 300px; */
+}
+.card {
+    width: 25%;
+    margin: 3% auto;
+    background-color: lightgray;
+    /* border: 2px solid black;
+    outline: 12px solid yellow; */
+    /* Box-shadow ==> h-offset , v-offset , blur ,  spread , color  */
+    /* box-shadow: 0px 0px 13px 0px #000000; */
+    /* display: inline-block; */
+}
+.card-img{
+    width: 100%;
+}
+.card-text{
+    color: #504d4d;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 4%;
+}
+.card-btn{
+    margin-top: 4%;
+    background-color: burlywood;
+    color: darkgreen;
+    width: 55%;
+    height: 35px;
+    font-size: 17px;
+    border: 2px solid brown;
+    border-radius: 4px;
+    margin: 4%;
+}
+
+.card-btn:hover{
+    background-color: black !important;
+    color: white;
+}
+.card:hover .card-btn{
+    background-color: cadetblue;
+}
+.card:hover{
+    box-shadow: 0px 0px 13px 0px #000000;
+}
+
+/********************** Pesudo Class ***************************/
+
+/* :focus */
+/* input{
+    border: 0;
+    border-bottom: 2px solid ;
+}
+input:focus{
+    outline: none;
+    border: 2px solid cadetblue;
+} */
+/* hover */
+input:hover{
+    /* background-color: chocolate; */
+    /* border: 2px solid black; */
+}
+textarea{
+    resize: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+/*************************************************************/
+/* link , active , visited */
+a:link{
+    color: red;
+}
+a:visited{
+    color: tan;
+}
+a:hover{
+    color: turquoise;
+}
+a:active{
+    color: green;
+}
+/*************************************************/
+
+
+/* .myInput{
+    background-color: teal;
+    color: tomato;
+} */
+
+.myInput:disabled{
+    background-color: teal;
+}
+.myInput::placeholder{
+    color: white;
+}
+
